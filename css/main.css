@@ -100,6 +100,7 @@ hr {
     border-radius: 50px;
     background-color: #DE3636;
     font-size: 3em;
+    box-shadow: 1px 1px 3px rgba(222,54,54,.25), -.5px -.5px 2px rgba(0,0,0,.25);
 }
 
 .arrow {
