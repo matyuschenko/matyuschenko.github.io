@@ -71,11 +71,11 @@ hr {
     height: .5px;
 }
 
-.section ul, .section li {
-    padding: 0;
+.section ul, .section li, #top p {
+    padding: 10px 0 0 0;
     margin: 0;
     list-style-type: none;
-    line-height: 1.5em;
+    line-height: 1.15em;
 }
 
 .site-name {
