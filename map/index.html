@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Map</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+<body>
+
+  <div id="regions_div" style="width: 100%; height: 100%;"></div>
+
+  <script type="text/javascript">
+  	  google.charts.load('current', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country'],
+          ['Germany'],
+          ['United States'],
+          ['Norway'],
+          ['Denmark'],
+          ['Ukraine'],
+          ['Belarus'],
+          ['Latvia'],
+          ['Mexico'],
+          ['Italy'],
+          ['Serbia'],
+          ['Macedonia'],
+          ['Albania'],
+          ['Montenegro'],
+          ['Bosnia and Herzegovina'],
+          ['Azerbaijan'],
+          ['Georgia'],
+          ['Armenia'],
+          ['Netherlands'],
+          ['Czech Republic'],
+          ['Hungary'],
+          ['Romania'],
+          ['Bulgaria'],
+          ['Turkey'],
+          ['Thailand'],
+          ['Kazakhstan'],
+          ['Great Britain'],
+          ['Egypt'],
+          ['Greece'],
+          ['Austria'],
+          ['Russia']
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+  </script>
+  
+</body>
+</html>
