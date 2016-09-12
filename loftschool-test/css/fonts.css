@@ -1,0 +1,52 @@
+/* FIRA SANS */
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url('../fonts/FiraSans/FiraSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-BoldItalic";
+    src: url('../fonts/FiraSans/FiraSans-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Italic";
+    src: url('../fonts/FiraSans/FiraSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Light";
+    src: url("../fonts/FiraSans/FiraSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "FiraSans-LightItalic";
+    src: url('../fonts/FiraSans/FiraSans-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url('../fonts/FiraSans/FiraSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-MediumItalic";
+    src: url('../fonts/FiraSans/FiraSans-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url('../fonts/FiraSans/FiraSans-Regular.ttf');
+}
+
+
+/* FONT AWESOME */
+@font-face {
+    font-family: "FontAwesome-Webfont";
+    src: url('../fonts/FontAwesome/fontawesome-webfont.ttf');
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/FontAwesome/FontAwesome.otf);
+}
