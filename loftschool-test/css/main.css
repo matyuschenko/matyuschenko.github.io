@@ -1,0 +1,337 @@
+body {
+    font-size: 62.5%;
+    min-width: 1200px;
+    cursor: default;
+    font-family: FiraSans-Light;
+    margin: 0;
+}
+
+
+/* HEADER */
+.header {
+    height: 90px;
+    background-color: #8cc34b;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-family: FiraSans-Regular;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.student-info {
+    height: 60px;
+    float: left;
+    margin: 15px 0 0 30px;
+    color: white;
+}
+
+.student-info > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.photo {
+    width: 55px;
+    margin-right: 20px;
+    border-radius: 27.5px;
+    border: 1px solid white;
+}
+
+.student-name {
+    font-family: FiraSans-Medium;
+    font-size: 21.26px;
+}
+
+.student-email {
+    font-family: FiraSans-Medium;
+    font-size: 14.17px;
+    opacity: .7;
+}
+
+.student-email a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-links {
+    float: right;
+    /*height: 90px;*/
+    margin: 30px 40px 0 0;
+}
+
+.social-links div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+div.github {
+    background: url(../icons/git.svg);
+}
+
+div.github:hover {
+    background: url(../icons/git_w.svg);
+}
+
+div.skype {
+    background: url(../icons/sk.svg);
+}
+
+div.skype:hover {
+    background: url(../icons/sk_w.svg);
+}
+
+div.vk {
+    width: 37px;
+    height: 21px;
+    background: url(../icons/vk.svg);
+    background-repeat: no-repeat;
+    padding-bottom: 5px;
+}
+
+div.vk:hover {
+    background: url(../icons/vk_w.svg);
+    background-repeat: no-repeat;
+}
+
+
+/* ABOUT STUDENT */
+.about-student {
+    margin-top: 65px;
+}
+
+.about-st-header, .about-st-subheader {
+    text-align: center;
+    width: 100%;
+}
+
+.about-st-header {
+    color: #212121;
+    font-family: FiraSans-Medium;
+    font-size: 42px;
+}
+
+.about-st-subheader {
+    color: #727272;
+    margin-top: 5px;
+    font-family: FiraSans-Light;
+    font-size: 21px;
+}
+
+.about-st-cols {
+    margin: 40px 0 75px 0;
+    text-align: center;
+}
+
+.about-st-cols > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 452px;
+    text-align: left;
+}
+
+.about-st-cols > div > * {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.hello-text, .experience-text {
+    width: 300px;
+}
+
+.hello-header, .experience-header {
+    font-family: FiraSans-Regular;
+    font-size: 21px;
+    color: #212121;
+}
+
+.hello-main, .experience-main {
+    font-family: FiraSans-Light;
+    font-size: 14px;
+    color: #727272;
+}
+
+
+/* COURSES */
+.courses {
+    padding: 75px 0;
+    background: url(../icons/gplaypattern.png);
+    min-height: 800px;
+    position: relative;
+}
+
+.courses-header, .courses-subheader {
+    text-align: center;
+    width: 100%;
+}
+
+.courses-header {
+    color: #212121;
+    font-family: FiraSans-Medium;
+    font-size: 42px;
+}
+
+.courses-subheader {
+    color: #727272;
+    margin: 5px 0 45px 0;
+    font-family: FiraSans-Light;
+    font-size: 21px;
+}
+
+.courses-row {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.course {
+    display: inline-block;
+    cursor: pointer;
+    width: 300px;
+    text-align: left;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    margin-left: 20px;
+    vertical-align: top;
+    position: relative;
+}
+
+.course-filter {
+    position: absolute;
+    width: 100%;
+}
+
+.course-image {
+    width: 300px;
+    height: 165px
+}
+
+.course-text {
+    background-color: white;
+    padding: 20px;
+}
+
+.course-text-header {
+    font-family: FiraSans-Regular;
+    font-size: 21px;
+    color: #212121;
+    line-height: 24px;
+}
+
+.course-text-main {
+    font-family: FiraSans-Light;
+    font-size: 14px;
+    line-height: 27.82px;
+    color: #727272;
+}
+
+.course-text-time {
+    font-family: FiraSans-Light;
+    font-size: 14px;
+    color: #b6b6b6;
+    margin-top: 10px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-clock-o:before {
+    content: "\f017";
+}
+
+.course-checkbox-area {
+    height: 60px;
+    background-color: #f6f7f2;
+}
+
+.course-checkbox-area > div {
+    display: inline-block;
+    line-height: 60px;
+}
+
+.course-checkbox {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b6b6b6;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 10px 0px 20px;
+}
+
+.course-checkbox-text {
+    font-size: 18px;
+    font-family: FiraSans-Regular;
+    color: #727272;
+}
+
+
+/* COURSES HOVER */
+.course:hover .course-text {
+    padding-top: 16px;
+    border-top: 4px solid #8cc34b;
+}
+
+.course:hover .course-text-header {
+    color: #8cc34b;
+}
+
+.fa-check-square:before {
+    content: "\f14a";
+}
+
+
+/* COURSES CLICK */
+.course.clicked .course-checkbox-text {
+    color: #8cc34b;
+}
+
+
+/* COMPLETE*/
+.complete-screen {
+    /*text-align: center;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-check:before {
+    content: "\f00c";
+}
+
+.complete-screen span {
+    font-family: FiraSans-Medium;
+    font-size: 41.63px;
+    color: #8cc34b;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 72px;
+    background-color: #212121;
+    z-index: 10;
+}
+
+.footer-text {
+    font-family: FiraSans-Regular;
+    font-size: 14px;
+    color: rgba(255,255,255,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
