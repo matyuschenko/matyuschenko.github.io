@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 </head>
 <body>
 
@@ -19,9 +18,10 @@
 
             <div class="header-container">
 
+                <!-- left pane: photo, name and email-->
                 <div class="student-info">
                     <div class="photo-col">
-                        <img src="icons/mm.jpg" class="photo"></img>
+                        <img src="icons/mm.jpg" class="photo" alt="Фото">
                     </div>
                     <div class="name-col">
                         <div class="student-name">Матющенко Максим Игоревич</div>
@@ -29,9 +29,10 @@
                     </div>
                 </div>
 
+                <!-- right pane: social links -->
                 <div class="social-links">
                     <a href="https://github.com/matyuschenko" target="_blank"><div class="github"></div></a>
-                    <div id="maksimka-mat" class="skype"></div>
+                    <a href="skype:maksimka-mat?userinfo"><div class="skype"></div></a>
                     <a href="https://vk.com/matyuschenko" target="_blank"><div class="vk"></div></a>
                 </div>
 
@@ -43,6 +44,7 @@
         <!-- MAIN CONTENT -->
         <div class="main-content">
 
+            <!-- block 1: about student -->
             <div class="about-student">
                 <div class="about-st-header">О будущем ученике</div>
                 <div class="about-st-subheader">Ребятам из Loftschool будет полезно узнать немного обо мне</div>
@@ -64,10 +66,13 @@
                 </div>
             </div>
 
+            <!-- block 2: courses -->
             <div class="courses">
-                <div class="courses-header">Курсы на lofrtblog</div>
+
+                <div class="courses-header">Курсы на loftblog</div>
                 <div class="courses-subheader">которые мне помогут в выполнении этого задания</div>
-                <div class="courses-row">
+
+                <div class="courses-wrapper">
 
                     <div class="course">
                         <div class="course-filter"></div>
@@ -111,8 +116,8 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="courses-row">
+                <!--</div>-->
+                <!--<div class="courses-row">-->
 
                     <div class="course">
                         <div class="course-filter"></div>
@@ -161,15 +166,14 @@
 
         </div>
 
+    </div>
 
-        <!-- FOOTER -->
-        <div class="footer">
-            <div class="footer-text">
-                А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,<br>
-                не зависимо от количества контента на странице и размера окна
-            </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-text">
+            А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,<br>
+            не зависимо от количества контента на странице и размера окна
         </div>
-
     </div>
 
 
