@@ -1,29 +1,6 @@
 $(window).bind("load", function() {
 
-	// FOOTER
-	var footerHeight = 0,
-	footerTop = 0,
-	$footer = $($(".footer")[0]);
-
-	positionFooter();
-
-	function positionFooter() {
-
-		footerHeight = $footer.height();
-		footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
-		$footer.css({
-			position: "absolute",
-			top: footerTop
-		})
-
-	}
-
-	$(window)
-		.scroll(positionFooter)
-		.resize(positionFooter);
-
-
-	// COURSES - PREPARE FILTERS
+	// COURSES - SET UP FILTERS
 	var courses = $('.course').each(function() {
 		var _h = $(this).height();
 		var _filter = $($(this).find('.course-filter')[0]);
@@ -33,24 +10,6 @@ $(window).bind("load", function() {
 
 	//	CLICK ON COURSES
 	courses.click(function() {
-
-		// add filter
-		//var _x = $(this).offset().left;
-		//var _y = $(this).offset().top;
-		//var _w = $(this).width();
-		//var _h = $(this).height();
-        //
-		//var filter = $('<div>').css({
-		//	position: 'absolute',
-		//	left: _x,
-		//	top: _y,
-		//	width: _w,
-		//	height: _h,
-		//	'background-color': '#8cc34b',
-		//	opacity: .2
-		//});
-        //
-		//filter.appendTo('body').delay(1000).fadeOut();
 
 		$(this).find('.course-filter').css({
 			'background-color': '#8cc34b',
@@ -73,10 +32,12 @@ $(window).bind("load", function() {
 	});
 
 
-	// CHECK NUM OF COURSES AND COMPLETE IF NECESSARY
+	// CHECK NUM OF COURSES AND SHOW COMPLETE IF NECESSARY
 	function check_courses() {
-		var left_courses = $('.course').filter(function() { return $(this).css('display') != 'none'; }).length;
-		if (left_courses == 0) {
+
+		var courses_left = $('.course').filter(function() { return $(this).css('display') != 'none'; }).length;
+
+		if (courses_left == 0) {
 			$('.courses-header').remove();
 			$('.courses-subheader').remove();
 
@@ -89,7 +50,7 @@ $(window).bind("load", function() {
 			complete_screen.append($('<span>').text(' Задание выполнено'));
 			$($('.courses')[0]).append(complete_screen);
 
-		};
+		}
 	}
 
 });
