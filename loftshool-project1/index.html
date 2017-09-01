@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="icon" type="image/png" href="assets/img/fav_desert.png">
+    <title>Максим Матющенко</title>
+  </head>
+  <body>
+    <div class="desert-wrapper">
+      <div class="desert"></div>
+    </div>
+    <div class="index-wrapper">
+      <button class="button authorize-button">Авторизоваться</button>
+      <div class="welcome flip-container">
+        <div class="flipper">
+          <div class="me flipper__front">
+            <div class="welcome-wrapper me-wrapper">
+              <div class="avatar-name">
+                <div class="avatar-wrapper"><img class="avatar" src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко"/></div>
+                <p class="avatar__label avatar__label_big">Максим Матющенко</p>
+                <p class="avatar__label avatar__label_small">Веб-разработчик</p>
+              </div>
+              <div class="welcome-social-buttons-wrapper">
+                <ul class="social-links">
+                  <li class="social-links__item social-links__item_name_vk"><a class="social-links__link_color_light social-links__link social-links__link_name_vk" target="_blank" href="https://vk.com/matyuschenko"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                  <li class="social-links__item social-links__item_name_github"><a class="social-links__link_color_light social-links__link social-links__link_name_github" target="_blank" href="https://github.com/matyuschenko"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                  <li class="social-links__item social-links__item_name_linkedin"><a class="social-links__link_color_light social-links__link social-links__link_name_linkedin" target="_blank" href="https://ru.linkedin.com/in/matyuschenko"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="welcome-buttons-wrapper"><a class="welcome-button" href="works.html">Мои работы</a><a class="welcome-button" href="about.html">Обо мне</a><a class="welcome-button" href="blog.html">Блог</a></div>
+          </div>
+          <div class="login flipper__back">
+            <div class="welcome-wrapper login-wrapper">
+              <h2 class="h2 login__h2">Авторизуйтесь</h2>
+              <form class="login-form" id="login-form">
+                <div class="login-form-input-wrapper"><span class="login-form__icon login-form__icon_type_login">
+                    <input class="login-form__input login-form__input_type_login" placeholder="Логин" data-name="login" required></span></div>
+                <div class="login-form-input-wrapper"><span class="login-form__icon login-form__icon_type_password">
+                    <input class="login-form__input login-form__input_type_password" placeholder="Пароль" type="password" data-name="password" required></span></div>
+                <div class="login-form__checkbox">
+                  <input class="checkbox login-form__checkbox" type="checkbox" name="robot-checkbox" value="yes" data-name="i-am-human" required><span class="login-form__checkbox-text">Я человек</span>
+                </div><span class="login-form__captcha-text">Вы точно не робот?</span>
+                <div class="login-form__radio-buttons">
+                  <div class="radio-group">
+                    <input class="login-form__radio" type="radio" name="captcha" value="yes" data-name="i-am-not-robot"><span class="login-form__radio-label">Да</span>
+                  </div>
+                  <div class="radio-group">
+                    <input class="login-form__radio" type="radio" name="captcha" value="no" data-name="i-am-robot"><span class="login-form__radio-label">Не уверен</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="welcome-buttons-wrapper">
+              <input class="welcome-button welcome-button_big" type="submit" value="Войти" form="login-form">
+              <input class="welcome-button welcome-button_big" type="reset" value="Очистить" form="login-form">
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="copyright footer-copyright"><span class="copyright__line">© Максим Матющенко</span><span class="copyright__separator"> | </span><span class="copyright__line">сделано в Loftschool | 2016</span></footer>
+    </div>
+    <div class="main-menu">
+      <nav class="main-menu__list"><a class="main-menu__item" href="works.html">Мои работы</a><a class="main-menu__item" href="about.html">Обо мне</a><a class="main-menu__item" href="blog.html">Блог</a><a class="main-menu__item" href="index.html">Авторизация</a></nav>
+    </div>
+    <div class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__animation"></div>
+        <div class="preloader__percent">100%</div>
+      </div>
+    </div>
+    <div class="validation-warning"></div>
+    <!--script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ECKASqNjr2kdFY1xJotto6NKcwsZqwI&callback=initMap")-->
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

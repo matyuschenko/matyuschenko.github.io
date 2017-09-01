@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="icon" type="image/png" href="assets/img/fav_desert.png">
+    <title>Максим Матющенко</title>
+  </head>
+  <body>
+    <div class="desert-wrapper">
+      <div class="desert"></div>
+    </div>
+    <header class="header background-container">
+      <div class="header__wrapper wrapper">
+        <div class="header__first-row">
+          <div class="header-social-buttons">
+            <ul class="social-links">
+              <li class="social-links__item social-links__item_name_vk"><a class="social-links__link_color_accent social-links__link social-links__link_name_vk" target="_blank" href="https://vk.com/matyuschenko"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+              <li class="social-links__item social-links__item_name_github"><a class="social-links__link_color_accent social-links__link social-links__link_name_github" target="_blank" href="https://github.com/matyuschenko"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+              <li class="social-links__item social-links__item_name_linkedin"><a class="social-links__link_color_accent social-links__link social-links__link_name_linkedin" target="_blank" href="https://ru.linkedin.com/in/matyuschenko"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="hamburger"></div>
+        </div>
+        <div class="header__second-row">
+          <div class="avatar-name">
+            <div class="avatar-wrapper"><img class="avatar" src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко"/></div>
+            <p class="avatar__label avatar__label_big">Максим Матющенко</p>
+            <p class="avatar__label avatar__label_small">Веб-разработчик</p>
+          </div>
+        </div>
+        <div class="header__third-row">
+          <div class="arrow-button header__arrow-button arrow-button_bottom"></div>
+        </div>
+        <svg class="watermark">
+          <use xlink:href="assets/img/portfolio_header.svg#Layer_1"></use>
+        </svg>
+      </div>
+      <div class="triangle-box"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1800 85" preserveaspectratio="none" class="triangle triangle_default"><polygon points="0,0   0,86   900.8,86   900.8,75.5"></polygon><polygon points="1800,0   1800,86   900,86   900,75.5"></polygon></svg></div>
+    </header>
+    <section class="about-me background-container">
+      <div class="about-me__wrapper wrapper">
+        <div class="cv">
+          <div class="cv__h1-wrapper">
+            <svg class="watermark-about">
+              <use xlink:href="assets/img/about_header.svg#Layer_1"></use>
+            </svg>
+            <h1 class="h1 cv__h1">Обо мне</h1>
+          </div>
+          <div class="cv__photo-wrapper"><img class="cv__photo" src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко"></div>
+          <h2 class="h2 cv__h2">Кто я</h2>
+          <p class="cv__text">Я пришёл в веб-разработку через визуализацию данных и интерактивную графику. Верстаю публикации исследований, разрабатываю шаблоны графиков, программирую интерактивы.</p>
+        </div>
+        <div class="skills">
+          <h2 class="h2 cv__h2">Что я могу</h2>
+          <p class="skills__description">Я разбираюсь во фронтенде и осваиваю бэкенд, поэтому готов к любым проектам.</p>
+          <div class="skills__charts">
+            <div class="skills__row">
+              <h3 class="h3 skills__h3">Frontend</h3>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_html"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_css"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_js"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__row">
+              <h3 class="h3 skills__h3">Backend</h3>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_php"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_mysql"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_node"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_mongo"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__row">
+              <h3 class="h3 skills__h3">Workflow</h3>
+              <ul class="skills__list">
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_git"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_gulp"></div>
+                </li>
+                <li class="skills__item">
+                  <div class="skills__chart skills__chart_type_bower"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map_and_contacts background-container">
+      <div class="map wrapper" id="map"></div>
+      <div class="contacts-wrapper">
+        <div class="contacts">
+          <h2 class="h2 contacts__h2">Контакты</h2>
+          <ul class="contacts-list">
+            <li class="contacts-list__item"><span class="contacts-list__icon contacts-list__icon_name_skype"><i class="fa fa-skype" aria-hidden="true"></i></span><a class="contacts-list__text" href="skype:maksimka-mat?userinfo" target="_blank">maxim-mat@yandex.ru</a></li>
+            <li class="contacts-list__item"><span class="contacts-list__icon contacts-list__icon_name_email"><i class="fa fa-envelope" aria-hidden="true"></i></span><a class="contacts-list__text" href="mailto:maxim-mat@yandex.ru" target="_blank">maxim-mat@yandex.ru</a></li>
+            <li class="contacts-list__item"><span class="contacts-list__icon contacts-list__icon_name_phone"><i class="fa fa-phone" aria-hidden="true"></i></span><a class="contacts-list__text" href="tel:+79032288595" target="_blank">+7 903 228 8595</a></li>
+            <li class="contacts-list__item"><span class="contacts-list__icon contacts-list__icon_name_address"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="contacts-list__text">Москва</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-description">
+          <p class="footer__description">Этот сайт я сделал в школе онлайн-образования Loftschool</p>
+          <p class="footer__copyright">© Максим Матющенко</p>
+          <p class="footer__date">Loftschool | 2016</p>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-navigation">
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="works.html">Мои работы</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="about.html">Обо мне</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="blog.html">Блог</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="index.html">Авторизация</a></li>
+          </ul>
+          <ul class="social-links">
+            <li class="social-links__item social-links__item_name_vk"><a class="social-links__link_color_light social-links__link social-links__link_name_vk" target="_blank" href="https://vk.com/matyuschenko"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li class="social-links__item social-links__item_name_github"><a class="social-links__link_color_light social-links__link social-links__link_name_github" target="_blank" href="https://github.com/matyuschenko"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+            <li class="social-links__item social-links__item_name_linkedin"><a class="social-links__link_color_light social-links__link social-links__link_name_linkedin" target="_blank" href="https://ru.linkedin.com/in/matyuschenko"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts"><a class="footer__contact" href="skype:maksimka-mat?userinfo" target="_blank">Skype: maxim-mat@yandex.ru</a><a class="footer__contact" href="mailto:maxim-mat@yandex.ru" target="_blank"> maxim-mat@yandex.ru</a><a class="footer__contact" href="tel:+79032288595" target="_blank"> +7 903 228 8595</a><a class="footer__contact">Москва</a></div>
+      </div>
+    </footer>
+    <div class="main-menu">
+      <nav class="main-menu__list"><a class="main-menu__item" href="works.html">Мои работы</a><a class="main-menu__item" href="about.html">Обо мне</a><a class="main-menu__item" href="blog.html">Блог</a><a class="main-menu__item" href="index.html">Авторизация</a></nav>
+    </div>
+    <div class="preloader">
+      <div class="preloader__spinner">
+        <div class="preloader__animation"></div>
+        <div class="preloader__percent">100%</div>
+      </div>
+    </div>
+    <div class="validation-warning"></div>
+    <!--script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ECKASqNjr2kdFY1xJotto6NKcwsZqwI&callback=initMap")-->
+    <script src="assets/js/foundation.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
